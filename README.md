@@ -21,8 +21,6 @@ To see which port Docker has assigned to your Ghost container, run:
 
 To build your own image, run `sudo docker build -t <image_name> .` in the directory with the Dockerfile after cloning this.
 
-----
-
 ## License
 
 Public domain. It's a Dockerfile, do whatever you want with it.
