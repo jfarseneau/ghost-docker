@@ -8,7 +8,7 @@ Dockerfile to build a Docker image of the Ghost blogging platform
 Get the image by running:
 `sudo docker pull thejf/ghost`
 
-This image has a custom config which requires a number of environment variables to tailor it to your needs. The required environment variables are:
+This image has a custom config which requires a number of environment variables to tailor it to your needs. [This is the config it uses](https://gist.github.com/TheJF/6979674). The required environment variables are:
 `GHOST_HTTP_URL`, `MAIL_FROMADDRESS`, `MAIL_SERVICE`, `MAIL_USERNAME`, `MAIL_PASSWORD`
 
 These must be configured as part of the run command. If you wanted to run a Ghost container as a daemon, you would type:
