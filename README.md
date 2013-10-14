@@ -18,6 +18,8 @@ It also requires a place to store the database outside the container, as storage
 These must be configured as part of the run command. If you wanted to run a Ghost container as a daemon, you would type this in the directory below `ghost-data`:
 `sudo docker run -e GHOST_HTTP_URL=http://your_own_url.com -e MAIL_FROMADDRESS=ghost@your_own_url.com -e MAIL_SERVICE=your_mail_service -e MAIL_USERNAME=your_username -e MAIL_PASSWORD=your_password -p 2368:2368 -v `pwd`/ghost-data:/content/data -d thejf/ghost npm start`
 
+If you wanted to run this in production mode as opposed to development mode, you need to add `-e NODE_ENV=production` to the run command.
+
 Now point your browser to your `http://your_own_url.com:2368` and magic.
 
 ## Roll your own image
