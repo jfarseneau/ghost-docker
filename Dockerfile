@@ -13,8 +13,8 @@ RUN apt-get install -y nodejs
 
 # Grab Ghost v0.3.2 and unpack
 RUN apt-get install -y wget unzip
-RUN wget https://en.ghost.org/zip/ghost-0.3.2.zip
-RUN unzip -uo ghost-0.3.2.zip
+RUN wget https://en.ghost.org/zip/ghost-0.3.3.zip
+RUN unzip -uo ghost-0.3.3.zip
 
 # Install Ghost dependencies
 RUN npm install --production
